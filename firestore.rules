@@ -1,0 +1,39 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function isValidId(id) {
+      return id is string && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$');
+    }
+
+    // Default deny
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // Scholars collection
+    match /scholars/{scholarId} {
+      allow list: if true;
+      allow get: if isValidId(scholarId);
+      allow create, update, delete: if isValidId(scholarId);
+    }
+
+    // Attendance logs collection
+    match /attendance_logs/{logId} {
+      allow list: if true;
+      allow get: if isValidId(logId);
+      allow create, update, delete: if isValidId(logId);
+    }
+
+    // Admins collection
+    match /admins/{adminId} {
+      allow list: if true;
+      allow get: if isValidId(adminId);
+      allow create, update, delete: if isValidId(adminId);
+    }
+
+    // Test connection probe
+    match /test/{testId} {
+      allow read: if true;
+    }
+  }
+}

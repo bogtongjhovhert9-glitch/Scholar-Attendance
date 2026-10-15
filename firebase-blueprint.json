@@ -1,0 +1,73 @@
+{
+  "entities": {
+    "scholar": {
+      "title": "Scholar",
+      "description": "Duty scholar profile and QR credentials",
+      "type": "object",
+      "properties": {
+        "id_number": { "type": "string", "maxLength": 64 },
+        "full_name": { "type": "string", "maxLength": 128 },
+        "course_program": { "type": "string", "maxLength": 128 },
+        "year_level": { "type": "string", "maxLength": 32 },
+        "assigned_office": { "type": "string", "maxLength": 128 },
+        "contact_number": { "type": "string", "maxLength": 64 },
+        "status": { "type": "string", "enum": ["Active", "Inactive"] },
+        "qr_token": { "type": "string", "maxLength": 64 },
+        "created_at": { "type": "string" },
+        "updated_at": { "type": "string" }
+      },
+      "required": ["id_number", "full_name", "assigned_office", "status", "qr_token"]
+    },
+    "attendance_log": {
+      "title": "AttendanceLog",
+      "description": "Duty attendance record with time in and time out",
+      "type": "object",
+      "properties": {
+        "scholar_id": { "type": "string", "maxLength": 128 },
+        "scholar_name": { "type": "string", "maxLength": 128 },
+        "scholar_id_number": { "type": "string", "maxLength": 64 },
+        "assigned_office": { "type": "string", "maxLength": 128 },
+        "date": { "type": "string", "maxLength": 32 },
+        "time_in": { "type": "string", "maxLength": 32 },
+        "time_out": { "type": "string", "maxLength": 32 },
+        "total_hours": { "type": "number" },
+        "manually_edited": { "type": "boolean" },
+        "notes": { "type": "string", "maxLength": 500 },
+        "created_at": { "type": "string" },
+        "updated_at": { "type": "string" }
+      },
+      "required": ["scholar_id", "scholar_name", "scholar_id_number", "assigned_office", "date", "time_in", "manually_edited"]
+    },
+    "admin": {
+      "title": "Admin",
+      "description": "Administrator account credentials and permissions",
+      "type": "object",
+      "properties": {
+        "username": { "type": "string", "maxLength": 64 },
+        "password_hash": { "type": "string", "maxLength": 256 },
+        "role": { "type": "string", "enum": ["admin", "superadmin"] },
+        "must_change_password": { "type": "boolean" },
+        "created_at": { "type": "string" }
+      },
+      "required": ["username", "password_hash", "role", "must_change_password"]
+    }
+  },
+  "firestore": {
+    "/scholars/{scholarId}": {
+      "schema": "scholar",
+      "description": "Collection of all duty scholars"
+    },
+    "/attendance_logs/{logId}": {
+      "schema": "attendance_log",
+      "description": "Daily duty attendance logs and shift records"
+    },
+    "/admins/{adminId}": {
+      "schema": "admin",
+      "description": "Administrator profiles"
+    },
+    "/test/{testId}": {
+      "schema": "admin",
+      "description": "Connection probe test documents"
+    }
+  }
+}

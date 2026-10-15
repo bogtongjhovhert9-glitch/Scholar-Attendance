@@ -1,0 +1,165 @@
+{
+  "admins": [
+    {
+      "id": "admin_1",
+      "username": "admin",
+      "password_hash": "$2b$10$Ft2bI1ILu26An/t8JhER4uxQZz.mb1Zr5XC0FOWviJWUFoX5hM18y",
+      "role": "superadmin",
+      "must_change_password": true,
+      "created_at": "2026-10-15T03:26:21.598Z"
+    }
+  ],
+  "scholars": [
+    {
+      "id": "sch_1",
+      "id_number": "2023-01429",
+      "full_name": "Maria Clara Santos",
+      "course_program": "BS Information Technology",
+      "year_level": "3rd Year",
+      "assigned_office": "Office of Student Affairs",
+      "contact_number": "0917-555-0192",
+      "status": "Active",
+      "qr_token": "osc_5a87e3c4dbdc135afe733e2c9df2dc31",
+      "created_at": "2026-09-15T03:26:21.899Z",
+      "updated_at": "2026-10-15T03:26:21.899Z"
+    },
+    {
+      "id": "sch_2",
+      "id_number": "2023-02105",
+      "full_name": "Joshua Miguel Dela Cruz",
+      "course_program": "BS Computer Science",
+      "year_level": "2nd Year",
+      "assigned_office": "University Library",
+      "contact_number": "0928-555-0341",
+      "status": "Active",
+      "qr_token": "osc_dc53d59558ff9193ef4d44c789c2f987",
+      "created_at": "2026-09-20T03:26:21.899Z",
+      "updated_at": "2026-10-15T03:26:21.899Z"
+    },
+    {
+      "id": "sch_3",
+      "id_number": "2022-00891",
+      "full_name": "Bea Angelica Reyes",
+      "course_program": "BS Business Administration",
+      "year_level": "4th Year",
+      "assigned_office": "Guidance & Counseling Office",
+      "contact_number": "0919-555-0812",
+      "status": "Active",
+      "qr_token": "osc_2b33eb959d3d311495acf3a16c93d921",
+      "created_at": "2026-09-05T03:26:21.899Z",
+      "updated_at": "2026-10-15T03:26:21.899Z"
+    },
+    {
+      "id": "sch_4",
+      "id_number": "2024-03410",
+      "full_name": "Ethan Gabriel Bautista",
+      "course_program": "BS Civil Engineering",
+      "year_level": "1st Year",
+      "assigned_office": "Registrar's Office",
+      "contact_number": "0939-555-0428",
+      "status": "Active",
+      "qr_token": "osc_f69e19d0573bd949ead5ecddd05a3c63",
+      "created_at": "2026-09-30T03:26:21.900Z",
+      "updated_at": "2026-10-15T03:26:21.900Z"
+    },
+    {
+      "id": "sch_5",
+      "id_number": "2023-01874",
+      "full_name": "Alyssa Nicole Mendoza",
+      "course_program": "BS Accountancy",
+      "year_level": "3rd Year",
+      "assigned_office": "Admissions Office",
+      "contact_number": "0915-555-0963",
+      "status": "Active",
+      "qr_token": "osc_43715bd4e0d04f3d988d9f371fe980f4",
+      "created_at": "2026-09-25T03:26:21.900Z",
+      "updated_at": "2026-10-15T03:26:21.900Z"
+    },
+    {
+      "id": "sch_6",
+      "id_number": "2022-04512",
+      "full_name": "Christian Dave Ramos",
+      "course_program": "BS Hospitality Management",
+      "year_level": "4th Year",
+      "assigned_office": "OSC Main Office",
+      "contact_number": "0927-555-0715",
+      "status": "Active",
+      "qr_token": "osc_5c1dd6bf823d9fb80dd6612b6edcae52",
+      "created_at": "2026-09-10T03:26:21.900Z",
+      "updated_at": "2026-10-15T03:26:21.900Z"
+    }
+  ],
+  "attendance_logs": [
+    {
+      "id": "log_1792034805665_hu7l",
+      "scholar_id": "sch_1",
+      "scholar_name": "Maria Clara Santos",
+      "scholar_id_number": "2023-01429",
+      "assigned_office": "Office of Student Affairs",
+      "date": "2026-10-15",
+      "time_in": "11:26:45",
+      "time_out": null,
+      "total_hours": null,
+      "manually_edited": false,
+      "created_at": "2026-10-15T03:26:45.665Z",
+      "updated_at": "2026-10-15T03:26:45.665Z"
+    },
+    {
+      "id": "log_1792034805665_hu7l",
+      "scholar_id": "sch_1",
+      "scholar_name": "Maria Clara Santos",
+      "scholar_id_number": "2023-01429",
+      "assigned_office": "Office of Student Affairs",
+      "date": "2026-10-15",
+      "time_in": "11:26:45",
+      "time_out": null,
+      "total_hours": null,
+      "manually_edited": false,
+      "created_at": "2026-10-15T03:26:45.665Z",
+      "updated_at": "2026-10-15T03:26:45.665Z"
+    },
+    {
+      "scholar_id_number": "2023-01429",
+      "date": "2026-10-15",
+      "time_out": "12:00:00",
+      "manually_edited": false,
+      "created_at": "2026-10-15T03:26:22.448Z",
+      "assigned_office": "Office of Student Affairs",
+      "scholar_id": "sch_1",
+      "scholar_name": "Maria Clara Santos",
+      "total_hours": 4,
+      "time_in": "08:00:00",
+      "id": "log_seed_1",
+      "updated_at": "2026-10-15T03:26:22.448Z"
+    },
+    {
+      "assigned_office": "University Library",
+      "manually_edited": false,
+      "id": "log_seed_2",
+      "scholar_id_number": "2023-02105",
+      "updated_at": "2026-10-15T03:26:22.448Z",
+      "date": "2026-10-15",
+      "total_hours": null,
+      "scholar_name": "Joshua Miguel Dela Cruz",
+      "scholar_id": "sch_2",
+      "time_out": null,
+      "time_in": "08:30:00",
+      "created_at": "2026-10-15T03:26:22.448Z"
+    },
+    {
+      "updated_at": "2026-10-15T03:26:22.448Z",
+      "scholar_name": "Bea Angelica Reyes",
+      "id": "log_seed_3",
+      "time_in": "09:00:00",
+      "assigned_office": "Guidance & Counseling Office",
+      "scholar_id": "sch_3",
+      "manually_edited": false,
+      "created_at": "2026-10-15T03:26:22.448Z",
+      "time_out": null,
+      "date": "2026-10-15",
+      "total_hours": null,
+      "scholar_id_number": "2022-00891"
+    }
+  ],
+  "login_attempts": {}
+}
